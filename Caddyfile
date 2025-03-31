@@ -87,4 +87,4 @@ reverse_proxy localhost:8080 {
     query f=json
 }
 
-rewrite @jsonalias /search?format=json
+rewrite @jsonalias /search?{query}&format=json
