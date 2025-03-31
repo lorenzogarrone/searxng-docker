@@ -6,4 +6,4 @@ services:
     autoDeploy: true
     envVars:
       - key: SEARXNG_BASE_URL
-        value: https://searxng.onrender.com
+        value: https://searxng-docker-9qwf.onrender.com
