@@ -81,3 +81,10 @@ reverse_proxy localhost:8080 {
 	header_up Host {http.request.host}
 	header_up Connection "close"
 }
+
+@jsonalias {
+    path /search
+    query f=json
+}
+
+rewrite @jsonalias /search?format=json
